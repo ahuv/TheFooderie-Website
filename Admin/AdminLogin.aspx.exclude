@@ -1,0 +1,21 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/FormMaster.master" AutoEventWireup="true" CodeFile="AdminLogin.aspx.cs" Inherits="Admin_Default" %>
+
+<%@ Register Src="~/Controls/NamePassword.ascx" TagPrefix="uc1" TagName="NamePassword" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cpmainContent" Runat="Server">
+
+  <uc1:NamePassword runat="server" ID="NamePassword" />
+  <br />
+  <asp:checkbox  ID="textList" runat="server"  
+     Text="Remember password"></asp:checkbox>
+  <br /><br />
+  <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+  <br />
+  <br />
+  
+  <br />
+
+
+</asp:Content>
+

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontEnd.master.cs" 
+  Inherits="MasterPages_FrontEnd"  %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>
+  
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div id="pageWrapper">
+      <header><img class="background" src="../App_Themes/Minimalist/Fooderie11.png" /></header>
+
+      <section id="mainContent">
+       <asp:ContentPlaceHolder ID="cpmainContent" runat="server">
+         <p>
+         </p>
+       </asp:ContentPlaceHolder>
+      </section>
+
+      <footer>&copy; 2017 Ahuva Sassoon</footer>
+    </div>
+    </form>
+</body>
+</html>

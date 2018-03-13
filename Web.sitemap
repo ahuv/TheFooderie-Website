@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/" title="Home"  description="Home">
+        <siteMapNode url="~/Default.aspx" title="Home"  description="Go to homepage" />
+        <siteMapNode url="~/Email.aspx" title="Contact Us"  description="Contact us" />
+        <siteMapNode url="~/About.aspx" title="About"  description="About" />
+        <siteMapNode url="~/Contribute.aspx" title="Contribute"  description="Contribute" />
+        
+        <siteMapNode url="~/MyAccount.aspx" title="My Account" description="My Account">
+          <siteMapNode url="~/MyAccount/Login.aspx" title="Login"  description="Login" />
+        </siteMapNode>
+      
+        <siteMapNode url="~/Recipes.aspx" title="Recipes" description="Recipes">
+          <siteMapNode url="~/Recipes/Mains.aspx" title="Mains" description="Mains">
+            <siteMapNode url="~/Recipes/Mains/Dairy.aspx" title="Dairy" description="Dairy" />
+            <siteMapNode url="~/Recipes/Mains/Meat.aspx" title="Meat" description="Meat" />
+            <siteMapNode url="~/Recipes/Mains/Fish.aspx" title="Fish" description="Fish" />
+          </siteMapNode>
+          <siteMapNode url="~/Recipes/Sides.aspx" title="Sides" description="Sides">
+            <siteMapNode url="~/Recipes/Sides/Starch.aspx" title="Starches" description="Starch" />
+            <siteMapNode url="~/Recipes/Sides/Veg.aspx" title="Veggies" description="Vegetables" />
+          </siteMapNode>
+          <siteMapNode url="~/Recipes/Desserts.aspx" title="Desserts" description="Desserts">
+            <siteMapNode url="~/Recipes/Desserts/CakesCookies.aspx" title="Cake and Cookies" description="Cakes and Cookies" />
+            <siteMapNode url="~/Recipes/Desserts/Treats.aspx" title="Sweet Treats" description="Treats" />
+          </siteMapNode>
+          <siteMapNode url="~/Recipes/Drinks.aspx" title="Drinks" description="Drinks">
+            <siteMapNode url="~/Recipes/Drinks/Smoothies.aspx" title="Smoothies" description="Smoothies" />
+            <siteMapNode url="~/Recipes/Drinks/Blends.aspx" title="Nutrition Blends" description="Nutrition Blends" />
+          </siteMapNode>
+        </siteMapNode>
+    
+    
+
+    </siteMapNode>
+</siteMap>

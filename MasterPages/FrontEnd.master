@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontEnd.master.cs" 
+  Inherits="MasterPages_FrontEnd"%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div id="pageWrapper">
+      <nav id ="logoBackground">
+
+        <header><img class="background" src="../App_Themes/Minimalist/Fooderie11.png" /></header>
+     
+      
+        <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" DynamicEnableDefaultPopOutImage="False" DynamicHorizontalOffset="1" DynamicVerticalOffset="1" Width="100%">
+          <StaticMenuItemStyle BorderColor="White" HorizontalPadding="50px" VerticalPadding="2px" />
+          <StaticMenuStyle HorizontalPadding="1px" Width="100%" />
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        <br />
+        </nav>
+     
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br />
+      
+      <asp:Label ID="VisitorName" runat="server"></asp:Label>
+
+      <section id="mainContent">
+       <asp:ContentPlaceHolder ID="cpmainContent" runat="server">
+       </asp:ContentPlaceHolder>
+      </section>
+
+      <footer>&copy; 2017 Ahuva Sassoon<br />
+        <asp:LoginView ID="LoginView1" runat="server">
+          <RoleGroups>
+            <asp:RoleGroup Roles="Admin">
+              <ContentTemplate>
+                (<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/AdminDefault.aspx">Manage Site</asp:HyperLink>
+                or
+                <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                )
+              </ContentTemplate>
+            </asp:RoleGroup>
+          </RoleGroups>
+        </asp:LoginView>
+      </footer>
+    </div>
+    </form>
+</body>
+</html>

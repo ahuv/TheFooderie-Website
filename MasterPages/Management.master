@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Management.master.cs" Inherits="MasterPages_Management" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <header><img class="background" src="../App_Themes/Minimalist/Fooderie11.png" /></header>
+
+      <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" DynamicEnableDefaultPopOutImage="False" DynamicHorizontalOffset="1" DynamicVerticalOffset="1" Width="100%">
+          <StaticMenuItemStyle BorderColor="White" HorizontalPadding="50px" VerticalPadding="2px" />
+          <StaticMenuStyle HorizontalPadding="1px" Width="100%" />
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        <br />
+        
+     
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+      <br />
+      <br />
+      
+
+      <nav style="width: 316px; float: left;">
+        <p>
+          <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/AdminDefault.aspx">Admin Home</asp:HyperLink>
+        </p>
+        <p>
+          <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin/AdminTables.aspx">Manage Information</asp:HyperLink>
+        </p>
+      </nav>
+      <section style="width: 750px; float: left">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      </section>
+        
+    </div>
+    </form>
+</body>
+</html>
